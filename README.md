@@ -1,10 +1,14 @@
-# Requirements
+## Summary
+
+This PHP script forwards Twitter timeline to the private Slack channel `twitter_timeline`.
+
+## Requirements
 
 - Server with Cron and PHP
 
-# Installation
+## Installation
 
-## Step 1 with Git
+### Step 1 with Git
 
 ```shell
 mkdir forward-twitter-timeline-to-slack
@@ -15,12 +19,21 @@ git clone https://github.com/J7mbo/twitter-api-php.git .
 cd ..
 ```
 
-## Step 1 without Git
+### Step 1 without Git
 
 - Download the Zip file and extract it.
 - Go to https://github.com/J7mbo/twitter-api-php, download the Zip file and extract it to twitter-api-php folder
 
-## Step 2
+### Step 2
+
+- Create a private channel `twitter_timeline` for Slack team.
+
+- Add incoming webhook for above channel if you have not created one.
+
+  + Search "Set up an incoming webhook" at https://api.slack.com/custom-integrations and click the button.
+  + Select #general or whatever and click "Add Incoming WebHooks integration" button.
+  + Search "Webhook URL".
+  + Keep opening the page.
 
 - Create your Twitter App at https://dev.twitter.com/apps/
 
@@ -31,16 +44,22 @@ cd ..
   + Create Access Token if you did not see (I had to do this in my case).
   + Keep opening the page.
 
-## Step 3
+### Step 3
 
 - Rename/Copy the file "settings.inc.example" to "settings.inc".
 
 - Set the followings with the information at Step 2:
 
-  + Consumer Key
-  + Consumer Secret
-  + Access Token
-  + Access Token Secret
+  + $slackUrl
+
+    * Webhook URL
+
+  + $settings
+
+    * Consumer Key
+    * Consumer Secret
+    * Access Token
+    * Access Token Secret
 
 - Upload the following files to your server.
 
@@ -52,7 +71,7 @@ cd ..
 
   + Set the permission to 664
 
-## Step 4
+### Step 4
 
 - Set Cron to execute web/index.php every 2 minutes.
 
