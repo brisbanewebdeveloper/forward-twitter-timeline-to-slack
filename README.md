@@ -33,7 +33,7 @@ cd ..
 
 ## Step 3
 
-- Rename/Copy the the file "settings.inc.example" to "settings.inc".
+- Rename/Copy the file "settings.inc.example" to "settings.inc".
 
 - Set the followings with the information at Step 2:
 
