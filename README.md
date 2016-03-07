@@ -50,7 +50,7 @@ cd ..
 
 - Create empty file "web/since_id.txt".
 
-  + Set the permission 664
+  + Set the permission to 664
 
 ## Step 4
 
