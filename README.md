@@ -56,3 +56,4 @@ cd ..
 
 - Set Cron to execute web/index.php every 2 minutes.
 
+- Create a new issue at https://github.com/hironozu/forward-twitter-timeline-to-slack/issues if it did not work.
