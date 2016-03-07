@@ -28,7 +28,7 @@ cd ..
 
 - Create a private channel `twitter_timeline` for Slack team.
 
-- Add incoming webhook for above channel if you have not created one.
+- Add incoming webhook for above channel if you have not created.
 
   + Search "Set up an incoming webhook" at https://api.slack.com/custom-integrations and click the button.
   + Select #general or whatever and click "Add Incoming WebHooks integration" button.
