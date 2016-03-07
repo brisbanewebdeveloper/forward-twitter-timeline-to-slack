@@ -48,7 +48,7 @@ cd ..
 
 - Rename/Copy the file "settings.inc.example" to "settings.inc".
 
-- Set the followings with the information at Step 2:
+- Set the followings in above file with the information at Step 2:
 
   + $slackUrl
 
