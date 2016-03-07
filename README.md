@@ -28,7 +28,7 @@ cd ..
   + Click "Create New App", fill the form and click "Create your Twitter application".
   + Select your new app.
   + Select "Keys and Access Tokens" tab.
-  + Create Access Token.
+  + Create Access Token if you did not see (I had to do this in my case).
   + Keep opening the page.
 
 ## Step 3
