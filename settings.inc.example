@@ -1,0 +1,24 @@
+<?php
+
+// Copy/Rename this file to settings.inc
+
+/**
+ * Leave this as it is unless you know what this is for
+ */
+$secret = null;
+
+/**
+ * Set the URL for your Slack Webhook
+ */
+$slackUrl = 'https://hooks.slack.com/services/123456789/123456789/123456789123456789123456';
+
+/**
+ * Set the info for your twitter app
+ * https://dev.twitter.com/apps/
+ */
+$settings = array(
+    'consumer_key'              => '1234567890123456789012345',
+    'consumer_secret'           => '12345678901234567890123451234567890123456789012345',
+    'oauth_access_token'        => '123456789-1234567890123456789012345678901234567890',
+    'oauth_access_token_secret' => '123456789012345678901234567890123456789012345',
+);
