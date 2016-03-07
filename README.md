@@ -54,5 +54,5 @@ cd ..
 
 ## Step 4
 
-- Set Cron to execute web/index.php every 2 minutes
+- Set Cron to execute web/index.php every 2 minutes.
 
