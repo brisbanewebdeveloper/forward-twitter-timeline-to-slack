@@ -1,3 +1,7 @@
+# Requirements
+
+- Server with Cron and PHP
+
 # Installation
 
 ## Step 1 with Git
