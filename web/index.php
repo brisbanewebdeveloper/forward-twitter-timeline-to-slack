@@ -114,9 +114,12 @@ if (file_exists($logFile)) {
  * Add the attachment data when sending the message (https://api.slack.com/docs/attachments),
  * and use "fields" to set the tag kind of data for your use so that when you use
  * https://api.slack.com/methods/channels.history you can filter out the messages not having
- * the specfic value, like someone may something in the channel and you can filter out them.
+ * the specfic value, like someone may have said something in the channel and
+ * you don't want to include the message. You can filter out them by checking if the message
+ * contains "fields" with the specific value.
  *
  * And you know you can provide the slash command to aggregate the data by typing like "/makeig".
+ * So you can aggregate the data when you want.
  *
  * Now, those are just idea. I am not sure if we can do that properly,
  * but I hope I have just made your eyes wide open about the possible use of Slack.
