@@ -107,10 +107,10 @@ if (file_exists($logFile)) {
  *
  * Later the Slack channel gets full of tweets in regards to Facebook.
  * You can just search something from the channel, but if you use Slack API
- * like https://api.slack.com/methods/channels.history, you can aggreate
- * all the data and create a infographic about what word is mostly used about Facebook.
+ * like https://api.slack.com/methods/channels.history, you can even aggreate
+ * all the messages and create a infographic about what word is mostly used about Facebook.
  *
- * Want to apply something only for specific message forwarded from this script?
+ * Want to apply something only for specific messages being forwarded from this script?
  * Add the attachment data when sending the message (https://api.slack.com/docs/attachments),
  * and use "fields" to set the tag kind of data for your use so that when you use
  * https://api.slack.com/methods/channels.history you can filter out the messages not having
