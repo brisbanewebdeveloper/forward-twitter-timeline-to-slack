@@ -41,14 +41,14 @@ cd ..
   + Click "Create New App", fill the form and click "Create your Twitter application".
   + Select your new app.
   + Select "Keys and Access Tokens" tab.
-  + Create Access Token if you did not see (I had to do this in my case).
+  + Create Access Token if you did not see (I had to do this).
   + Keep opening the page.
 
 ### Step 3
 
-- Rename/Copy the file "settings.inc.example" to "settings.inc".
+- Rename/Copy the file "settings.inc.example" in the files at Step 1 to "settings.inc".
 
-- Set the followings in above file with the information at Step 2:
+- Set the followings in the file "settings.inc" with the information at Step 2:
 
   + $slackUrl
 
@@ -61,7 +61,8 @@ cd ..
     * Access Token
     * Access Token Secret
 
-- Upload the following files to your server.
+- Upload the following three files to your server  
+  (It may not need to upload them to somewhere accesible for your browser like `public_html`; I have not tried that).
 
   + settings.inc
   + twitter-api-php/TwitterAPIExchange.php
