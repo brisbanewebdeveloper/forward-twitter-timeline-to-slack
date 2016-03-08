@@ -92,7 +92,7 @@ if (file_exists($logFile)) {
  * https://dev.twitter.com/rest/public
  *
  * This script may make you think it is to make your Slack team as Twitter client,
- * and it is not just that. This script can a starter kit of your project.
+ * and it is not just that. This script can be a starter kit of your project.
  *
  * Slack stores the chat history including what this script forwards to the channel,
  * and it also let you search something within the channel.
