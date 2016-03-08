@@ -87,6 +87,47 @@ if (file_exists($logFile)) {
     $since_id = null;
 }
 
+/**
+ * The following page let you see what else you can retrieve via Twitter API:
+ * https://dev.twitter.com/rest/public
+ *
+ * This script may make you think it is to make your Slack team as Twitter client,
+ * and it is not just that. This script can a starter kit of your project.
+ *
+ * Slack stores the chat history including what this script forwards to the channel,
+ * and it also let you search something within the channel.
+ *
+ * That means Slack channel can be used as your private data storage for specific use.
+ *
+ * For example, you decided to collect the tweets including the word "facebook".
+ * "https://twitter.com/search?q=xxx" seems to do the job according to
+ * https://dev.twitter.com/rest/public/search. So you just start
+ * getting the tweets having the word "facebook" with the API
+ * and keep forwarding them to your Slack channel.
+ *
+ * Later the Slack channel gets full of tweets in regards to Facebook.
+ * You can just search something from the channel, but if you use Slack API
+ * like https://api.slack.com/methods/channels.history, you can aggreate
+ * all the data and create a infographic about what word is mostly used about Facebook.
+ *
+ * Want to apply something only for specific message forwarded from this script?
+ * Add the attachment data when sending the message (https://api.slack.com/docs/attachments),
+ * and use "fields" to set the tag kind of data for your use so that when you use
+ * https://api.slack.com/methods/channels.history you can filter our the messages not having
+ * the specfic value, like someone may something in the channel and you can filter out them.
+ *
+ * And you know you can provide the slash command to aggregate the data by typing like "/makeig".
+ *
+ * Now, those are just idea. I am not sure if we can do that properly,
+ * but I hope I have just made your eyes wide open about the possible use of Slack.
+ *
+ * It is kind of like how we use Evernote, but how we collect the data is automated
+ * (Sure, we can do it with Evernote API, but this is about Slack so).
+ *
+ * And if you got into this, the following page is also useful
+ * because you can avoid investigating the data structure for a request:
+ * https://dev.twitter.com/rest/tools/console
+ */
 $url = 'https://api.twitter.com/1.1/statuses/home_timeline.json';
 $getfield = '?include_entities=false&count=200';
 // $getfield = '?include_entities=false&count=10';
