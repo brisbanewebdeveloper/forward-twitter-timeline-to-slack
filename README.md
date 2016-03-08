@@ -1,6 +1,8 @@
 ## Summary
 
-This PHP script forwards Twitter timeline to the private Slack channel `twitter_timeline`.
+- This PHP script forwards Twitter timeline to the private Slack channel `twitter_timeline`.
+- If you were interested in this script, you check out "web/index.php"
+- If you were interested in what this script can become, you can read [this part](https://github.com/hironozu/forward-twitter-timeline-to-slack/blob/master/web/index.php#L90) in above file.
 
 ## Requirements
 
