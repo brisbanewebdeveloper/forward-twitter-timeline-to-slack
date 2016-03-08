@@ -113,7 +113,7 @@ if (file_exists($logFile)) {
  * Want to apply something only for specific message forwarded from this script?
  * Add the attachment data when sending the message (https://api.slack.com/docs/attachments),
  * and use "fields" to set the tag kind of data for your use so that when you use
- * https://api.slack.com/methods/channels.history you can filter our the messages not having
+ * https://api.slack.com/methods/channels.history you can filter out the messages not having
  * the specfic value, like someone may something in the channel and you can filter out them.
  *
  * And you know you can provide the slash command to aggregate the data by typing like "/makeig".
