@@ -11,7 +11,7 @@ require_once __DIR__ . '/../settings.inc';
 require_once __DIR__ . '/../twitter-api-php/TwitterAPIExchange.php';
 
 
-function slack($username, $text, $iconUrl) {
+function slack($username, $text, $iconUrl = false) {
 
     global $slackUrl;
 
