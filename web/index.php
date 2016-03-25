@@ -4,7 +4,7 @@
  * Foward Twitter timeline to Slack channel
  */
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
 require_once __DIR__ . '/../settings.inc';
