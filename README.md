@@ -1,7 +1,6 @@
 ## Summary
 
 - This PHP scripts forward Twitter Timeline to a private Slack channel `twitter_timeline`.
-- This PHP scripts can also forward Twitter List to a private Slack channel `twitter_$twitter_list ` (`$twitter_list` is to be defined in `settings.inc`), but the setup is not documented as it should be easy.
 - If you were interested in this script, you check out "web/index.php".
 - If you were interested in what this script can become, you can read [this part](https://github.com/hironozu/forward-twitter-timeline-to-slack/blob/master/web/index.php#L90) in above file.
 
@@ -80,3 +79,7 @@ cd ..
 - Set Cron to execute web/index.php every 2 minutes.
 
 - Create a new issue at https://github.com/hironozu/forward-twitter-timeline-to-slack/issues if it did not work.
+
+## Additional Info
+
+- This PHP scripts can also forward Twitter List to a private Slack channel `twitter_$twitter_list ` (`$twitter_list` is to be defined in `settings.inc`), but the setup is not documented as it should be easy.
