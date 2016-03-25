@@ -7,8 +7,8 @@
 
 // ini_set('display_errors', 1);
 
-require_once __DIR__ . '/../../../settings.inc';
-require_once __DIR__ . '/../../../twitter-api-php/TwitterAPIExchange.php';
+require_once __DIR__ . '/../../settings.inc';
+require_once __DIR__ . '/../../twitter-api-php/TwitterAPIExchange.php';
 
 
 function slack($username, $text, $iconUrl = false) {
