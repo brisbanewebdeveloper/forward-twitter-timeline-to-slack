@@ -13,6 +13,23 @@ $secret = null;
 $slackUrl = 'https://hooks.slack.com/services/123456789/123456789/123456789123456789123456';
 
 /**
+ * Set the user name for Twitter Account
+ */
+$username = 'my_twitter_name';
+
+/**
+ * Set the user id for Twitter Account
+ * (You can get the value from the command "php what-is-my-twitter-owner-id.php"
+ *  after setting the variable $username above)
+ */
+$owner_id = '1234567890';
+
+/**
+ * Set the name of Twitter List for your Twitter Account to forward it
+ */
+$twitter_list = 'my_twitter_list';
+
+/**
  * Set the info for your twitter app
  * https://dev.twitter.com/apps/
  */
